@@ -1,0 +1,271 @@
+* {
+  /* font-family:"Space Mono", monospace; */
+  /* font-size: small; */
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* .space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+} */
+
+body {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  /* background-color: #1b1e21; */
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  max-width: 1920px;
+}
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #242729;
+  color: #ffffffe6;
+}
+.main_menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  /* background-color: #242729; */
+  background-color: #2a2d2f;
+}
+.menu_item{
+  padding: 10px;
+  cursor: pointer
+}
+
+.side_menu_item {
+  padding-left: 20px;
+  padding-right: 10px;
+  cursor: pointer
+}
+
+.menu_item:hover{
+  background-color: #ffffff10;
+}
+
+.side_menu_item:hover{
+  background-color: #ffffff26;
+}
+
+.header_nav_item__active, .side_nav_item__active {
+  color:darksalmon ;
+}
+
+.side_nav_item__active {
+  background-color: #ffffff26;
+  color:darksalmon ;
+}
+
+a {
+  pointer-events: none;
+  text-decoration: none;
+  color: lightskyblue;
+
+}
+
+input {
+  position: absolute;
+  z-index: -1;
+}
+
+input:checked + label > .menu_item{
+  background-color: #69747a;
+}
+
+.content_item {
+ color: white;
+}
+
+.descr {
+  cursor: pointer;
+}
+
+.content_item_prop {
+  display: block;
+  color: red;
+}
+
+.content_item_prop_none {
+  display: none;
+}
+
+.container_main {
+  display: flex;
+}
+
+.container_side {
+  /* min-width: fit-content; */
+  min-width: 200px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  background-color: #2a2d2f;
+}
+
+.container_content {
+  /* background-color: #1b1e1f; */
+  background-color: #232729;
+  /* max-width: 100%;
+  min-width: 80%; */
+  padding: 20px;
+  overflow-y: auto;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.open {
+  cursor: pointer;
+}
+
+.main_item {
+  /* width: 100%;  */
+  width: 80%;
+}
+
+.main_item__active > .main_item_name:first-child {
+  color: darksalmon;
+  /* font-weight: bold; */
+}
+
+/* .main_item_name {
+  font-weight: bold;
+} */
+
+.main_item_name:hover {
+  background-color: #69747a;
+  cursor: pointer;
+}
+
+.main_item_descr {
+  color: white;
+  width: 80%;
+}
+
+.main_item_descr:first-child > .obj_name {
+  /* font-weight: bold; */
+  color: darksalmon;
+  font-size: larger;
+}
+
+.obj_descr {
+  margin-top: 10px;
+}
+
+.obj_descr::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 1px;
+  background: #fff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.obj_info {
+  margin-top: 10px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  /* width: 100%; */
+  max-width: 100%;
+  box-sizing: border-box;
+  table-layout: fixed;
+  word-wrap: break-word;
+
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  word-wrap: break-word;
+}
+
+.popup {
+  min-width: fit-content;
+  position: absolute;
+  background-color: black;
+  color: lightskyblue;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  padding: 0 5px 0 5px;
+  margin: 0;
+}
+
+.Argument, .Summary{
+  color: lightskyblue;
+}
+
+.codeblock, .syntaxblock, .code{
+  background-color: rgb(56, 56, 56);
+  /* font-size: x-small; */
+  /* width: 80%; */
+}
+
+pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  background-color: rgb(56, 56, 56);
+  /* width: 80%; */
+}
+
+h1, h2 {
+  font-size: larger;
+  /* font-weight: normal; */
+}
+
+@media (max-width: 768px) {
+  .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container_side {
+    min-width: 70px;
+  }
+
+}
+

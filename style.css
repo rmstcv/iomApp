@@ -165,6 +165,7 @@ input:checked + label > .menu_item{
 .main_item_name:hover {
   background-color: #69747a;
   cursor: pointer;
+  width: inherit;
 }
 
 .main_item_descr {
